@@ -15,12 +15,25 @@ namespace Monospace2 {
 	[MonoTouch.Foundation.Register("SessionCellController")]
 	public partial class SessionCellController {
 		
+		private MonoTouch.UIKit.UILabel __mt_labelTime;
+		
+		private MonoTouch.UIKit.UILabel __mt_labelTitle;
+		
+		private MonoTouch.UIKit.UILabel __mt_labelSubtitle;
+		
+		private MonoTouch.UIKit.UITableViewCell __mt_cell;
+		
+		private MonoTouch.UIKit.UILabel __mt_labelTimeEnd;
+		
+		#pragma warning disable 0169
 		[MonoTouch.Foundation.Connect("labelTime")]
 		private MonoTouch.UIKit.UILabel labelTime {
 			get {
-				return ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTime")));
+				this.__mt_labelTime = ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTime")));
+				return this.__mt_labelTime;
 			}
 			set {
+				this.__mt_labelTime = value;
 				this.SetNativeField("labelTime", value);
 			}
 		}
@@ -28,9 +41,11 @@ namespace Monospace2 {
 		[MonoTouch.Foundation.Connect("labelTitle")]
 		private MonoTouch.UIKit.UILabel labelTitle {
 			get {
-				return ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTitle")));
+				this.__mt_labelTitle = ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTitle")));
+				return this.__mt_labelTitle;
 			}
 			set {
+				this.__mt_labelTitle = value;
 				this.SetNativeField("labelTitle", value);
 			}
 		}
@@ -38,9 +53,11 @@ namespace Monospace2 {
 		[MonoTouch.Foundation.Connect("labelSubtitle")]
 		private MonoTouch.UIKit.UILabel labelSubtitle {
 			get {
-				return ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelSubtitle")));
+				this.__mt_labelSubtitle = ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelSubtitle")));
+				return this.__mt_labelSubtitle;
 			}
 			set {
+				this.__mt_labelSubtitle = value;
 				this.SetNativeField("labelSubtitle", value);
 			}
 		}
@@ -48,9 +65,11 @@ namespace Monospace2 {
 		[MonoTouch.Foundation.Connect("cell")]
 		private MonoTouch.UIKit.UITableViewCell cell {
 			get {
-				return ((MonoTouch.UIKit.UITableViewCell)(this.GetNativeField("cell")));
+				this.__mt_cell = ((MonoTouch.UIKit.UITableViewCell)(this.GetNativeField("cell")));
+				return this.__mt_cell;
 			}
 			set {
+				this.__mt_cell = value;
 				this.SetNativeField("cell", value);
 			}
 		}
@@ -58,9 +77,11 @@ namespace Monospace2 {
 		[MonoTouch.Foundation.Connect("labelTimeEnd")]
 		private MonoTouch.UIKit.UILabel labelTimeEnd {
 			get {
-				return ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTimeEnd")));
+				this.__mt_labelTimeEnd = ((MonoTouch.UIKit.UILabel)(this.GetNativeField("labelTimeEnd")));
+				return this.__mt_labelTimeEnd;
 			}
 			set {
+				this.__mt_labelTimeEnd = value;
 				this.SetNativeField("labelTimeEnd", value);
 			}
 		}

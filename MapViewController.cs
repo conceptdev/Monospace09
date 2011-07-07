@@ -214,6 +214,9 @@ namespace Monospace2
 			get {
 				return _coordinate;
 			}
+			set {
+				_coordinate = value;
+			}
 		}
 		public override string Title {
 			get {
